@@ -40,9 +40,9 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Prachee Javiya's  Magnum Opus</h1>
+              <h1 className={classes.subtitle}>Hello!</h1>
+                <h1 className={classes.title}>I'm Prachee Javiya.</h1>
                 <h3 className={classes.subtitle}>
-                 
                 </h3>
               </div>
             </GridItem>
@@ -58,7 +58,7 @@ export default function Components(props) {
           justify="center"
           alignItems="center"
         >
-          <h3>Our team of trainers</h3>
+          <h3>Check out my work!</h3>
           <GridContainer justify="center">
             <GridItem xs={12} sm={2}>
               <SectionExamples />

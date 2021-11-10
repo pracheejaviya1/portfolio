@@ -28,9 +28,9 @@ export default function Footer(props) {
     <footer className={footerClasses}>
       <div className={classes.container}>
         
-          &copy; {1900 + new Date().getYear()} , made with{" "}
+          &copy; {1900 + new Date().getYear()}, made with{" "}
           <Favorite className={classes.icon} /> by{" "}
-          Team DyneFit
+          Prachee Javiya
       </div>
     </footer>
   );
