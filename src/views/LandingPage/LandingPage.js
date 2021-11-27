@@ -19,8 +19,6 @@ import ProductSection from "./Sections/ProductSection.js";
 
 
 
-const dashboardRoutes = [];
-
 const useStyles = makeStyles(styles);
 const headerStyles = makeStyles(styles1);
 
@@ -31,18 +29,6 @@ export default function LandingPage(props) {
   const { ...rest } = props;
   return (
     <div>
-      {/* <Header
-        color="transparent"
-        routes={dashboardRoutes}
-        brand="Material Kit React"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
-        {...rest}
-      /> */}
       <Header
         color="transparent"
         rightLinks={<HeaderLogo className={classes1.topNavBar} />}
@@ -52,7 +38,7 @@ export default function LandingPage(props) {
           color: "white",
         }}
       />
-      <Parallax filter image={require("assets/img/foodbg.png")}>
+      <Parallax filter image={require("assets/img/robot.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>

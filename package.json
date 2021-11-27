@@ -18,10 +18,11 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
     "react-slick": "0.26.1",
-    "react-swipeable-views": "0.13.9"
+    "react-swipeable-views": "0.13.9",
+    "three": "^0.135.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.10.1",
+    "@babel/cli": "^7.16.0",
     "@babel/plugin-proposal-class-properties": "7.10.1",
     "@babel/preset-env": "7.10.1",
     "@babel/preset-react": "7.10.1",

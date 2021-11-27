@@ -48,7 +48,7 @@ export default function ProfilePage(props) {
         }}
       />
 
-      <Parallax small filter image={require("assets/img/new_bg.png")} />
+      <Parallax small filter image={require("assets/img/robot.jpg")} />
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>

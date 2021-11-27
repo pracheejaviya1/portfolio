@@ -21,8 +21,8 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-twitter"
-          title="Twitter"
+          id="instagram-linkedin"
+          title="Linkedin"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
@@ -62,7 +62,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/_dyneoffcial_/"
+            href="https://www.instagram.com/pracheejaviya/"
             target="_blank"
             className={classes.navLink}
           >
@@ -72,8 +72,8 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-facebook"
-          title="Facebook"
+          id="instagram-github"
+          title="Github"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
