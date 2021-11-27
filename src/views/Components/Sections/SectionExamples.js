@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(styles);
 
-export default function SectionExamples() {
+export default function SectionExamples(props) {
   const classes = useStyles();
 
   return (
@@ -23,8 +23,8 @@ export default function SectionExamples() {
       <div className={classes.container}>
         <GridContainer justify="center">
 
-          <GridItem xs={12} sm={12} md={6}>
-            <Link to="profile-page" className={classes.link}>
+          <GridItem xs={12} sm={12}>
+            <Link to="landing-page" className={classes.link}>
               <img
                 src={profile}
                 alt="..."
@@ -40,7 +40,7 @@ export default function SectionExamples() {
             </Link>
           </GridItem>
           <Button color="primary" size="lg" simple>
-                John Doe
+                {props.workType}
               </Button>
         </GridContainer>
       </div>

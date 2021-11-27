@@ -29,7 +29,7 @@ export default function LandingPage(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Header
+      {/* <Header
         color="transparent"
         rightLinks={<HeaderLogo className={classes1.topNavBar} />}
         fixed
@@ -37,7 +37,7 @@ export default function LandingPage(props) {
           height: 100,
           color: "white",
         }}
-      />
+      /> */}
       <Parallax filter image={require("assets/img/robot.jpg")}>
         <div className={classes.container}>
           <GridContainer>

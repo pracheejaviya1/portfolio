@@ -18,8 +18,6 @@ import React from "react";
 import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 
-
-
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
@@ -40,10 +38,10 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-              <h1 className={classes.subtitle}>Hello!</h1>
+                <h1 className={classes.subtitle}>Hello!</h1>
                 <h1 className={classes.title}>I'm Prachee Javiya.</h1>
-                <h3 className={classes.subtitle}>
-                </h3>
+                <SectionCompletedExamples />
+                <h3 className={classes.subtitle}></h3>
               </div>
             </GridItem>
           </GridContainer>
@@ -58,24 +56,49 @@ export default function Components(props) {
           justify="center"
           alignItems="center"
         >
-          <h3>Check out my work!</h3>
+          <h3>Check out my Projects!</h3>
+          <GridContainer justify="center" container spacing={12}>
+            <GridItem xs={6} sm={2}>
+              <SectionExamples workType="Projects" />
+            </GridItem>
+            <GridItem xs={6} sm={2} className={classes.marginLeft}>
+              <SectionExamples workType="Internships" />
+            </GridItem>
+            <GridItem xs={6} sm={2} className={classes.marginLeft}>
+              <SectionExamples workType="Hobbies" />
+            </GridItem>
+          </GridContainer>
+        </Grid>
+        <Grid container direction="column" justify="center" alignItems="center">
+          <h3>Work Experience</h3>
           <GridContainer justify="center">
             <GridItem xs={12} sm={2}>
-              <SectionExamples />
+              <SectionExamples workType="Projects" />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples />
+              <SectionExamples workType="Internships" />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples />
+              <SectionExamples workType="Hobbies" />
+            </GridItem>
+          </GridContainer>
+        </Grid>
+        <Grid container direction="column" justify="center" alignItems="center">
+          <h3>Hobbies</h3>
+          <GridContainer justify="center">
+            <GridItem xs={6} sm={2}>
+              <SectionExamples workType="Projects" />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples />
+              <SectionExamples workType="Internships" />
+            </GridItem>
+            <GridItem xs={12} sm={2} className={classes.marginLeft}>
+              <SectionExamples workType="Hobbies" />
             </GridItem>
           </GridContainer>
         </Grid>
 
-        <SectionCompletedExamples />
+        {/* <SectionCompletedExamples /> */}
       </div>
       <Footer />
     </div>

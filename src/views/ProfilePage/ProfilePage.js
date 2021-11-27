@@ -38,15 +38,15 @@ export default function ProfilePage(props) {
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
     <div>
-      <Header
+      {/* <Header
         color="transparent"
-        rightLinks={<HeaderLogo className={classes1.topNavBar} />}
+        // rightLinks={<HeaderLogo className={classes1.topNavBar} />}
         fixed
         changeColorOnScroll={{
           height: 100,
           color: "white",
         }}
-      />
+      /> */}
 
       <Parallax small filter image={require("assets/img/robot.jpg")} />
 
