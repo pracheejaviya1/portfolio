@@ -18,7 +18,24 @@ import React from "react";
 import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 
-import PFP from "../../assets/img/eduserv.png";
+import EDU from "../../assets/img/book.jpg";
+import CAL from "../../assets/img/calendar.jpg";
+import CAR from "../../assets/img/car.jpg";
+import PC from "../../assets/img/pc.png";
+import STOCK from "../../assets/img/stock.jpg";
+
+//inter
+import EV from "../../assets/img/ev.jpg";
+import CAM from "../../assets/img/camera.jpg";
+import GRAIN from "../../assets/img/wheat.jpg";
+import DUMB from "../../assets/img/dumbells.jpg";
+
+//hobb
+import BB from "../../assets/img/basketball.jpg";
+import CUBE from "../../assets/img/cube.jpg";
+import DANCE from "../../assets/img/dance.jpg";
+
+
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
@@ -60,50 +77,58 @@ export default function Components(props) {
           <h3>Check out my Projects!</h3>
           <GridContainer justify="center" container spacing={12}>
             <GridItem xs={6} sm={2}>
-              <SectionExamples project="EduServ" profile={PFP} />
+              <SectionExamples project="EduServ" profile={EDU} />
             </GridItem>
             <GridItem xs={6} sm={2} className={classes.marginLeft}>
-              <SectionExamples project="EveRecon" />
+              <SectionExamples project="EveRecon" profile={CAL} />
             </GridItem>
             <GridItem xs={6} sm={2} className={classes.marginLeft}>
-              <SectionExamples project="Autonomous Car" />
+              <SectionExamples project="Autonomous Car" profile={CAR} />
             </GridItem>
             <GridItem xs={6} sm={2}>
-              <SectionExamples project="Smart Car System" />
+              <SectionExamples project="Smart Car System" profile={PC} />
             </GridItem>
             <GridItem xs={6} sm={2}>
-              <SectionExamples project="Stock Performance Predictor" />
+              <SectionExamples
+                project="Stock Performance Predictor"
+                profile={STOCK}
+              />
             </GridItem>
           </GridContainer>
         </Grid>
+
         <Grid container direction="column" justify="center" alignItems="center">
           <h3>I have some work experience</h3>
           <GridContainer justify="center">
             <GridItem xs={12} sm={2}>
-              <SectionExamples project="Dyne Health and Fitness" />
+              <SectionExamples project="Dyne Health and Fitness" profile={DUMB} />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples project="Grams Evaluation Labs" />
+              <SectionExamples
+                project="Grams Evaluation Labs"
+                profile={GRAIN}
+              />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples project="Tirex Transmission" />
+              <SectionExamples project="Tirex Transmission" profile={EV} />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples project="Data Cluster Labs" />
+              <SectionExamples project="Data Cluster Labs" profile={CAM} />
             </GridItem>
           </GridContainer>
         </Grid>
+
         <Grid container direction="column" justify="center" alignItems="center">
           <h3>Things I love to do</h3>
           <GridContainer justify="center">
             <GridItem xs={6} sm={2}>
-              <SectionExamples project="Basketball" />
+              <SectionExamples project="Basketball" profile={BB}/>
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples project="Speed Cubing" />
+              <SectionExamples project="Speed Cubing" profile={CUBE} />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples project="Dancing" />
+              <SectionExamples project="Dancing" profile={DANCE}/>
             </GridItem>
           </GridContainer>
         </Grid>

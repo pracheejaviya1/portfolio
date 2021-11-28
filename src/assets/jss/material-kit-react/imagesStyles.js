@@ -41,8 +41,8 @@ const imagesStyles = {
   },
 
   imgSize:{
-    width: "5.9rem",
-    height: "5.9rem"
+    width: "8.9rem",
+    height: "8.9rem"
   }
 };
 
