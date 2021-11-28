@@ -9,10 +9,8 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 import React from "react";
 
-
-
 const makeComponentStyles = makeStyles(() => ({
-  ...buttonStyle
+  ...buttonStyle,
 }));
 
 const RegularButton = React.forwardRef((props, ref) => {
@@ -44,7 +42,7 @@ const RegularButton = React.forwardRef((props, ref) => {
     [classes.block]: block,
     [classes.link]: link,
     [classes.justIcon]: justIcon,
-    [className]: className
+    [className]: className,
   });
   return (
     <Button {...rest} ref={ref} className={btnClasses}>
@@ -57,6 +55,7 @@ RegularButton.propTypes = {
   color: PropTypes.oneOf([
     "primary",
     "info",
+    "secondary",
     "success",
     "warning",
     "danger",
@@ -66,7 +65,7 @@ RegularButton.propTypes = {
     "twitter",
     "google",
     "github",
-    "transparent"
+    "transparent",
   ]),
   size: PropTypes.oneOf(["sm", "lg"]),
   simple: PropTypes.bool,
@@ -77,7 +76,7 @@ RegularButton.propTypes = {
   link: PropTypes.bool,
   justIcon: PropTypes.bool,
   children: PropTypes.node,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default RegularButton;

@@ -59,13 +59,19 @@ export default function Components(props) {
           <h3>Check out my Projects!</h3>
           <GridContainer justify="center" container spacing={12}>
             <GridItem xs={6} sm={2}>
-              <SectionExamples workType="Projects" />
+              <SectionExamples project="EduServ" />
             </GridItem>
             <GridItem xs={6} sm={2} className={classes.marginLeft}>
-              <SectionExamples workType="Internships" />
+              <SectionExamples project="EveRecon" />
             </GridItem>
             <GridItem xs={6} sm={2} className={classes.marginLeft}>
-              <SectionExamples workType="Hobbies" />
+              <SectionExamples project="Autonomous Car" />
+            </GridItem>
+            <GridItem xs={6} sm={2}>
+              <SectionExamples project="Smart Car System" />
+            </GridItem>
+            <GridItem xs={6} sm={2}>
+              <SectionExamples project="Stock Performance Predictor" />
             </GridItem>
           </GridContainer>
         </Grid>
@@ -73,13 +79,16 @@ export default function Components(props) {
           <h3>Work Experience</h3>
           <GridContainer justify="center">
             <GridItem xs={12} sm={2}>
-              <SectionExamples workType="Projects" />
+              <SectionExamples project="Dyne Health and Fitness" />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples workType="Internships" />
+              <SectionExamples project="Grams Evaluation Labs" />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples workType="Hobbies" />
+              <SectionExamples project="Tirex Transmission" />
+            </GridItem>
+            <GridItem xs={12} sm={2} className={classes.marginLeft}>
+              <SectionExamples project="Data Cluster Labs" />
             </GridItem>
           </GridContainer>
         </Grid>
@@ -87,13 +96,13 @@ export default function Components(props) {
           <h3>Hobbies</h3>
           <GridContainer justify="center">
             <GridItem xs={6} sm={2}>
-              <SectionExamples workType="Projects" />
+              <SectionExamples project="Basketball" />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples workType="Internships" />
+              <SectionExamples project="Speed Cubing" />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples workType="Hobbies" />
+              <SectionExamples project="Dancing" />
             </GridItem>
           </GridContainer>
         </Grid>

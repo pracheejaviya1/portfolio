@@ -11,8 +11,6 @@ import React from "react";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
 
-
-
 const useStyles = makeStyles(styles);
 
 export default function SectionExamples(props) {
@@ -22,9 +20,8 @@ export default function SectionExamples(props) {
     <div className={classes.section}>
       <div className={classes.container}>
         <GridContainer justify="center">
-
           <GridItem xs={12} sm={12}>
-            <Link to="landing-page" className={classes.link}>
+            <Link to="profile-page" className={classes.link}>
               <img
                 src={profile}
                 alt="..."
@@ -36,12 +33,11 @@ export default function SectionExamples(props) {
                   classes.imgSize
                 }
               />
-              
             </Link>
           </GridItem>
-          <Button color="primary" size="lg" simple>
-                {props.workType}
-              </Button>
+          <Button color="github" size="lg" simple disabled>
+            {props.project}
+          </Button>
         </GridContainer>
       </div>
     </div>
