@@ -21,9 +21,9 @@ export default function SectionExamples(props) {
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12}>
-            <Link to="profile-page" className={classes.link}>
+            <Link to="landing-page" className={classes.link}>
               <img
-                src={profile}
+                src={props.profile}
                 alt="..."
                 className={
                   classes.imgRaised +

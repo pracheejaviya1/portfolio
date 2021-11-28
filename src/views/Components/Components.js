@@ -18,6 +18,7 @@ import React from "react";
 import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 
+import PFP from "../../assets/img/eduserv.png";
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
@@ -59,7 +60,7 @@ export default function Components(props) {
           <h3>Check out my Projects!</h3>
           <GridContainer justify="center" container spacing={12}>
             <GridItem xs={6} sm={2}>
-              <SectionExamples project="EduServ" />
+              <SectionExamples project="EduServ" profile={PFP} />
             </GridItem>
             <GridItem xs={6} sm={2} className={classes.marginLeft}>
               <SectionExamples project="EveRecon" />
@@ -76,7 +77,7 @@ export default function Components(props) {
           </GridContainer>
         </Grid>
         <Grid container direction="column" justify="center" alignItems="center">
-          <h3>Work Experience</h3>
+          <h3>I have some work experience</h3>
           <GridContainer justify="center">
             <GridItem xs={12} sm={2}>
               <SectionExamples project="Dyne Health and Fitness" />
@@ -93,7 +94,7 @@ export default function Components(props) {
           </GridContainer>
         </Grid>
         <Grid container direction="column" justify="center" alignItems="center">
-          <h3>Hobbies</h3>
+          <h3>Things I love to do</h3>
           <GridContainer justify="center">
             <GridItem xs={6} sm={2}>
               <SectionExamples project="Basketball" />
