@@ -15,6 +15,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import React from "react";
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
+import WorkSection from "./Sections/WorkSection.js";
 
 
 
@@ -24,7 +25,7 @@ const headerStyles = makeStyles(styles1);
 
 export default function LandingPage(props) {
   const classes = useStyles();
-  const classes1 = headerStyles();
+  //const classes1 = headerStyles();
 
   const { ...rest } = props;
   return (
@@ -41,13 +42,17 @@ export default function LandingPage(props) {
       <Parallax filter image={require("assets/img/robot.jpg")}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <h2 className={classes.title}>Your Story Starts With Us.</h2>
+            <GridItem xs={6} sm={12} md={6}>
+              <h2 className={classes.title}>EduServ</h2>
               <h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{" "}
+                The pandemic led every student and teacher across the globe get
+                acquainted with online studying platforms. Due to increase in
+                demand, improvements in Human-Computer Interaction have reached the epitome. The
+                students have to adapt to the methods where they can be
+                delivered materials without physical contact and so do teachers
+                who must be able to deliver content in online mode of education.
+                This was the perfect opportunity to develop an E-learning
+                platform.{" "}
               </h4>
               <br />
               {/* <Button
@@ -67,8 +72,8 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
-          {/* <TeamSection />
-          <WorkSection /> */}
+          {/* <TeamSection /> */}
+          {/* <WorkSection /> */}
         </div>
       </div>
       <Footer />

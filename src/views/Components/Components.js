@@ -8,6 +8,8 @@ import classNames from "classnames";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
+import { Link } from "react-router-dom";
+
 // @material-ui/icons
 // core components
 import Header from "components/Header/Header.js";
@@ -34,11 +36,19 @@ import DUMB from "../../assets/img/dumbells.jpg";
 import BB from "../../assets/img/basketball.jpg";
 import CUBE from "../../assets/img/cube.jpg";
 import DANCE from "../../assets/img/dance.jpg";
+// import { Button } from "@material-ui/core";
+import Button from "../../components/CustomButtons/Button.js";
 
 
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
+   const mystyle = {
+     color: "blue",
+     
+     padding: "10px",
+     alignItems: "center"
+   };
   const classes = useStyles();
   return (
     <div>
@@ -101,7 +111,10 @@ export default function Components(props) {
           <h3>I have some work experience</h3>
           <GridContainer justify="center">
             <GridItem xs={12} sm={2}>
-              <SectionExamples project="Dyne Health and Fitness" profile={DUMB} />
+              <SectionExamples
+                project="Dyne Health and Fitness"
+                profile={DUMB}
+              />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
               <SectionExamples
@@ -122,18 +135,26 @@ export default function Components(props) {
           <h3>Things I love to do</h3>
           <GridContainer justify="center">
             <GridItem xs={6} sm={2}>
-              <SectionExamples project="Basketball" profile={BB}/>
+              <SectionExamples project="Basketball" profile={BB} />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
               <SectionExamples project="Speed Cubing" profile={CUBE} />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples project="Dancing" profile={DANCE}/>
+              <SectionExamples project="Dancing" profile={DANCE} />
             </GridItem>
           </GridContainer>
+          <Link to="login-page" className={classes.link}>
+            <Button
+              className={classes.marginBottom}
+              color="primary"
+              size="lg"
+              simple
+            >
+              Get in Touch
+            </Button>
+          </Link>
         </Grid>
-
-        {/* <SectionCompletedExamples /> */}
       </div>
       <Footer />
     </div>
