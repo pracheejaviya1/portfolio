@@ -19,6 +19,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import React from "react";
 import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
 import SectionExamples from "./Sections/SectionExamples.js";
+import SectionHonors from "./Sections/SectionHonors.js";
 
 import EDU from "../../assets/img/book.jpg";
 import CAL from "../../assets/img/calendar.jpg";
@@ -144,16 +145,19 @@ export default function Components(props) {
               <SectionExamples project="Dancing" profile={DANCE} />
             </GridItem>
           </GridContainer>
+         <SectionHonors/>
+          <GridContainer justify="center">
+            <h3>Let's Connect!</h3>
+          </GridContainer>
           <Link to="login-page" className={classes.link}>
-            <Button
-              className={classes.marginBottom}
-              color="primary"
-              size="lg"
-              simple
-            >
-              Get in Touch
+            <Button color="github">
+              <i className={classes.socials} /> Get in touch
             </Button>
           </Link>
+          <div>
+            <br />
+            <br/>
+          </div>
         </Grid>
       </div>
       <Footer />
