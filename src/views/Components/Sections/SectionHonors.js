@@ -18,19 +18,23 @@ export default function SectionHonors() {
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2>Position of Responsibility </h2>
-                      <h4>
-                          <ul>
-                              <li>
-                                  
-                              </li>
-                          </ul>
-                          
+            <h2 justify="center">Achievements </h2>
+            <h4>
+              National Level Basketball U-17
+              <br />
+              State level basketball U-16, U-17, U-19 opens <br />
+              Speed Cubing 3x3 WCA DAIICT, Gandhinagar <br />
+              Team project on Autonomous car was selected for Annual Tech Expo at the University
             </h4>
           </GridItem>
-          <GridItem xs={12} sm={12} md={8}>
-            <h2>Volunteer Work</h2>
-            <h4>fsgssf</h4>
+          <GridItem xs={12} sm={12} md={12}>
+            <h2>Positions of Responsiblity</h2>
+            <h4>
+              I was the Secretary and Treasurer for University's Annual Techfest, Ingenium for two consecutive years.  
+              <br />
+             Peer tutor for Communication in English Course<br />
+              Teaching Assistant for Human Computer Interaction course in the final semester
+            </h4>
           </GridItem>
         </GridContainer>
       </div>
