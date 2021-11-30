@@ -17,7 +17,13 @@ export default function SectionCompletedExamples() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={8}>
             {/* <h3>About Me</h3> */}
-            <h4>I am a Final Year BTech student at Ahmedabad University, India. I love designing websites and mobile applications. I have good experience in coding frontend. I am also passionate about basketball. </h4>
+            <h4>
+              I am a Final Year BTech student at Ahmedabad University, India. I
+              am also pursuing Minors in Physics as Cosmos
+              and Astronomy fascinates me. 
+              I have good experience in designing, coding website frontend and developing Android
+              mobile applications.  I am also passionate about basketball.{" "}
+            </h4>
           </GridItem>
         </GridContainer>
       </div>

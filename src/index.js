@@ -43,7 +43,7 @@ class App extends Component {
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/landing-page" component={LandingPage} />
+      <Route path="/landing-page/:uid" component={LandingPage} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/login-page" component={LoginPage} />
       <Route path="/contact-page" component={WorkSection} />

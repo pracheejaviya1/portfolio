@@ -40,16 +40,16 @@ import DANCE from "../../assets/img/dance.jpg";
 // import { Button } from "@material-ui/core";
 import Button from "../../components/CustomButtons/Button.js";
 
-
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
-   const mystyle = {
-     color: "blue",
-     
-     padding: "10px",
-     alignItems: "center"
-   };
+  //const uid = props.uid;
+  const mystyle = {
+    color: "blue",
+
+    padding: "10px",
+    alignItems: "center",
+  };
   const classes = useStyles();
   return (
     <div>
@@ -88,7 +88,9 @@ export default function Components(props) {
           <h3>Check out my Projects!</h3>
           <GridContainer justify="center" container spacing={12}>
             <GridItem xs={6} sm={2}>
-              <SectionExamples project="EduServ" profile={EDU} />
+              <Link to={"landing-page/1"}>
+                <SectionExamples project="EduServ" profile={EDU} />
+              </Link>
             </GridItem>
             <GridItem xs={6} sm={2} className={classes.marginLeft}>
               <SectionExamples project="EveRecon" profile={CAL} />
@@ -145,7 +147,7 @@ export default function Components(props) {
               <SectionExamples project="Dancing" profile={DANCE} />
             </GridItem>
           </GridContainer>
-         <SectionHonors/>
+          <SectionHonors />
           <GridContainer justify="center">
             <h3>Let's Connect!</h3>
           </GridContainer>
@@ -156,7 +158,7 @@ export default function Components(props) {
           </Link>
           <div>
             <br />
-            <br/>
+            <br />
           </div>
         </Grid>
       </div>
