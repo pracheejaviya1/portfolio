@@ -104,7 +104,7 @@ export default function Components(props) {
             </GridItem>
             <GridItem xs={6} sm={2}>
               <Link to={"landing-page/4"}>
-                <SectionExamples project="Smart Car System" profile={PC} />
+                <SectionExamples project="LSTM-Spectrum Sensing" profile={PC} />
               </Link>
             </GridItem>
             <GridItem xs={6} sm={2}>

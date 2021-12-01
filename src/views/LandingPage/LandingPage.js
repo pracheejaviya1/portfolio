@@ -16,6 +16,7 @@ import React from "react";
 // Sections for this page
 import ProductSection from "./Sections/ProjectDetails/EduServ/ProductSection.js";
 import EvereconProductSection from "./Sections/ProjectDetails/EveRecon/EvereconProductSection.js";
+import CarProductSection from "./Sections/ProjectDetails/Car/CarProductSection.js"
 
 
 const useStyles = makeStyles(styles);
@@ -92,5 +93,73 @@ export default function LandingPage(props) {
          <Footer />
        </div>
      );
-   } else return <div> hi</div>;
+   }
+  
+  if (uid === "3") {
+    return (
+      <div>
+        <Parallax filter image={require("assets/img/carbg.png")}>
+          <div className={classes.container}>
+            <GridContainer>
+              <GridItem xs={12} sm={12} md={12}>
+                <h4>
+                  A self-driving car, also known as an autonomous vehicle, driverless car, or robotic car is
+                  a vehicle that is capable of sensing its environment and
+                  moving safely with little or no human input. The future
+                  of this technology may have an impact on multiple industries
+                  and other circumstances. Self-driving cars combine a variety
+                  of sensors to perceive their surroundings, such as radar,
+                  lidar, sonar, GPS, odometry and inertial measurement
+                  units. Advanced control systems interpret sensory
+                  information to identify appropriate navigation paths, as well
+                  as obstacles and relevant signage. 
+                </h4>
+                <br />
+              </GridItem>
+            </GridContainer>
+          </div>
+        </Parallax>
+        <div className={classNames(classes.main, classes.mainRaised)}>
+          <div className={classes.container}>
+            <CarProductSection />
+          </div>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+   if (uid === "4") {
+     return (
+       <div>
+         <Parallax filter image={require("assets/img/robot.jpg")}>
+           <div className={classes.container}>
+             <GridContainer>
+               <GridItem xs={12} sm={12} md={12}>
+                 <h4>
+                   A self-driving car, also known as an autonomous vehicle,
+                   driverless car, or robotic car is a vehicle that is capable
+                   of sensing its environment and moving safely with little or
+                   no human input. The future of this technology may have an
+                   impact on multiple industries and other circumstances.
+                   Self-driving cars combine a variety of sensors to perceive
+                   their surroundings, such as radar, lidar, sonar, GPS,
+                   odometry and inertial measurement units. Advanced control
+                   systems interpret sensory information to identify appropriate
+                   navigation paths, as well as obstacles and relevant signage.
+                 </h4>
+                 <br />
+               </GridItem>
+             </GridContainer>
+           </div>
+         </Parallax>
+         <div className={classNames(classes.main, classes.mainRaised)}>
+           <div className={classes.container}>
+             <CarProductSection />
+           </div>
+         </div>
+         <Footer />
+       </div>
+     );
+   } else return <div> DOES NOT EXIST</div>;
 }
