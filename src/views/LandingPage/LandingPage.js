@@ -15,7 +15,7 @@ import HeaderLogo from "components/Header/HeaderLogo.js";
 import Parallax from "components/Parallax/Parallax.js";
 import React from "react";
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.js";
+import ProductSection from "./Sections/ProjectDetails/EduServ/ProductSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 
 const useStyles = makeStyles(styles);
@@ -30,10 +30,10 @@ export default function LandingPage(props) {
   if (uid === "1") {
     return (
       <div>
-        <Parallax filter image={require("assets/img/robot.jpg")}>
+        <Parallax filter image={require("assets/img/figma.png")}>
           <div className={classes.container}>
             <GridContainer>
-              <GridItem xs={6} sm={12} md={6}>
+              <GridItem xs={12} sm={12} md={12}>
                 <h2 className={classes.title}>EduServ</h2>
                 <h4>
                   The pandemic led every student and teacher across the globe
@@ -46,16 +46,6 @@ export default function LandingPage(props) {
                   develop an E-learning platform.{" "}
                 </h4>
                 <br />
-                {/* <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-play" />
-                Watch video
-              </Button> */}
               </GridItem>
             </GridContainer>
           </div>
@@ -63,8 +53,6 @@ export default function LandingPage(props) {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <ProductSection />
-            {/* <TeamSection /> */}
-            {/* <WorkSection /> */}
           </div>
         </div>
         <Footer />

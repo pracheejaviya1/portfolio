@@ -93,19 +93,27 @@ export default function Components(props) {
               </Link>
             </GridItem>
             <GridItem xs={6} sm={2} className={classes.marginLeft}>
-              <SectionExamples project="EveRecon" profile={CAL} />
+              <Link to={"landing-page/2"}>
+                <SectionExamples project="EveRecon" profile={CAL} />
+              </Link>
             </GridItem>
             <GridItem xs={6} sm={2} className={classes.marginLeft}>
-              <SectionExamples project="Autonomous Car" profile={CAR} />
+              <Link to={"landing-page/3"}>
+                <SectionExamples project="Autonomous Car" profile={CAR} />
+              </Link>
             </GridItem>
             <GridItem xs={6} sm={2}>
-              <SectionExamples project="Smart Car System" profile={PC} />
+              <Link to={"landing-page/4"}>
+                <SectionExamples project="Smart Car System" profile={PC} />
+              </Link>
             </GridItem>
             <GridItem xs={6} sm={2}>
-              <SectionExamples
-                project="Stock Performance Predictor"
-                profile={STOCK}
-              />
+              <Link to={"landing-page/5"}>
+                <SectionExamples
+                  project="Stock Performance Predictor"
+                  profile={STOCK}
+                />{" "}
+              </Link>
             </GridItem>
           </GridContainer>
         </Grid>

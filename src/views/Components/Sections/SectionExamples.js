@@ -21,7 +21,6 @@ export default function SectionExamples(props) {
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12}>
-            <Link to="landing-page" className={classes.link}>
               <img
                 src={props.profile}
                 alt="..."
@@ -33,7 +32,6 @@ export default function SectionExamples(props) {
                   classes.imgSize
                 }
               />
-            </Link>
           </GridItem>
           <Button color="github" size="lg" simple disabled>
             {props.project}
