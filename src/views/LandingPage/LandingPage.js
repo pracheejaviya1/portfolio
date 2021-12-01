@@ -1,7 +1,6 @@
 import { useParams } from "react-router";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import styles1 from "assets/jss/material-kit-react/components/headerLogoStyle";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -20,7 +19,6 @@ import CarProductSection from "./Sections/ProjectDetails/Car/CarProductSection.j
 
 
 const useStyles = makeStyles(styles);
-const headerStyles = makeStyles(styles1);
 
 export default function LandingPage(props) {
   let { uid } = useParams();
@@ -137,16 +135,7 @@ export default function LandingPage(props) {
              <GridContainer>
                <GridItem xs={12} sm={12} md={12}>
                  <h4>
-                   A self-driving car, also known as an autonomous vehicle,
-                   driverless car, or robotic car is a vehicle that is capable
-                   of sensing its environment and moving safely with little or
-                   no human input. The future of this technology may have an
-                   impact on multiple industries and other circumstances.
-                   Self-driving cars combine a variety of sensors to perceive
-                   their surroundings, such as radar, lidar, sonar, GPS,
-                   odometry and inertial measurement units. Advanced control
-                   systems interpret sensory information to identify appropriate
-                   navigation paths, as well as obstacles and relevant signage.
+                  LSTM
                  </h4>
                  <br />
                </GridItem>
@@ -161,5 +150,144 @@ export default function LandingPage(props) {
          <Footer />
        </div>
      );
-   } else return <div> DOES NOT EXIST</div>;
+   }
+  if (uid === "5") {
+    return (
+      <div>
+        <Parallax filter image={require("assets/img/robot.jpg")}>
+          <div className={classes.container}>
+            <GridContainer>
+              <GridItem xs={12} sm={12} md={12}>
+                <h4>
+                MACHINE LEARNING
+                </h4>
+                <br />
+              </GridItem>
+            </GridContainer>
+          </div>
+        </Parallax>
+        <div className={classNames(classes.main, classes.mainRaised)}>
+          <div className={classes.container}>
+            <CarProductSection />
+          </div>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+   if (uid === "6") {
+     return (
+       <div>
+         <Parallax filter image={require("assets/img/new_bg.png")}>
+           <div className={classes.container}>
+             <GridContainer>
+               <GridItem xs={12} sm={12} md={12}>
+                 <h1 className={classes.title}>Dyne Health and Fitness</h1>
+                 <h4>
+                   Dyne Health and Fitness was a start-up by a few students from
+                   BITS Pilani, Rajasthan, India. The aim was to make gymming
+                   more accessible to the general public during the pandemic. We
+                   made an application that assigned trainers for people who
+                   signed up. One can either join as a user or trainer before
+                   signing in. Trainers who could add personalized meals and
+                   diet plans for their clients. This project is currently
+                   Rajasthan based. The application was made in Android Studio.
+                   The backend (authentication and verification) was done with
+                   Firebase. My role was to code the front- end in XML. The
+                   designs were made in Adobe XD. Later, after one month, I also
+                   started coding the backend.
+                 </h4>
+                 <br />
+               </GridItem>
+             </GridContainer>
+           </div>
+         </Parallax>
+         <Footer />
+       </div>
+     );
+   }
+    if (uid === "7") {
+      return (
+        <div>
+          <Parallax filter image={require("assets/img/grams.jpg")}>
+            <div className={classes.container}>
+              <GridContainer>
+                <GridItem xs={12} sm={12} md={12}>
+                  <h1 className={classes.title}>Grams Evaluation</h1>
+                  <h4>
+                    This project was for one client in the US. The company
+                    needed an Android developer to build their application. The
+                    function of the app was to predict the quality of a grain
+                    using machine learning algorithms. I designed the frontend
+                    for the application in Figma and coded the same in XML.
+                  </h4>
+                  <br />
+                </GridItem>
+              </GridContainer>
+            </div>
+          </Parallax>
+          <Footer />
+        </div>
+      );
+    }
+        if (uid === "8") {
+          return (
+            <div>
+              <Parallax filter image={require("assets/img/evcar.jpg")}>
+                <div className={classes.container}>
+                  <GridContainer>
+                    <GridItem xs={12} sm={12} md={12}>
+                      <h1 className={classes.title}>Tirex Transmission</h1>
+                      <h4>
+                        Tirex transmission is an Ahmedabad based company which
+                        builds algorithms for Electric Vehicles. Currently the
+                        algorithms are not used in the country since there
+                        aren't any EVs in India. The application for charging
+                        the EV was designed and developed by me in Android
+                        Studio.
+                      </h4>
+                      <br />
+                    </GridItem>
+                  </GridContainer>
+                </div>
+              </Parallax>
+              <Footer />
+            </div>
+          );
+        }
+              if (uid === "9") {
+                return (
+                  <div>
+                    <Parallax filter image={require("assets/img/evcar.jpg")}>
+                      <div className={classes.container}>
+                        <GridContainer>
+                          <GridItem xs={12} sm={12} md={12}>
+                            <h1 className={classes.title}>Data Cluster Labs</h1>
+                            <h4>
+                              It is a Bangalore based startup. Their aim is to
+                              collect real world data from users to train AI
+                              models.The users click pictures of everyday
+                              objects(e.g. number plates) and upload it in the
+                              application. The user would get a nominal amount
+                              for completing the task. The startup was only a
+                              few months old when I joined, so I was
+                              multitasking in various domains. I Developed a
+                              design for the mobile application after designing
+                              a document on Atlassian Confluence which included
+                              the features of the app and use case, state and
+                              activity diagram. I coded the frontend for the app
+                              using React Native and firebase. Later on,
+                              documents such as coding conventions, folder
+                              structure and construction details were added to
+                              confluence for easy handover to the next intern.
+                            </h4>
+                            <br />
+                          </GridItem>
+                        </GridContainer>
+                      </div>
+                    </Parallax>
+                    <Footer />
+                  </div>
+                );
+              } else return <div> DOES NOT EXIST</div>;
 }

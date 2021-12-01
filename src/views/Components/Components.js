@@ -3,13 +3,14 @@ import Grid from "@material-ui/core/Grid";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import styles from "assets/jss/material-kit-react/views/components.js";
+import Slide from "@material-ui/core/Slide";
+
 // nodejs library that concatenates classes
 import classNames from "classnames";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import { Link } from "react-router-dom";
-
 // @material-ui/icons
 // core components
 import Header from "components/Header/Header.js";
@@ -40,9 +41,20 @@ import DANCE from "../../assets/img/dance.jpg";
 // import { Button } from "@material-ui/core";
 import Button from "../../components/CustomButtons/Button.js";
 
+import styles1 from "assets/jss/material-kit-react/views/componentsSections/javascriptStyles.js";
+
 const useStyles = makeStyles(styles);
 
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="down" ref={ref} {...props} />;
+});
+
+Transition.displayName = "Transition";
+
+const useStyles1 = makeStyles(styles1);
+
 export default function Components(props) {
+  const [classicModal, setClassicModal] = React.useState(false);
   //const uid = props.uid;
   const mystyle = {
     color: "blue",
@@ -51,6 +63,7 @@ export default function Components(props) {
     alignItems: "center",
   };
   const classes = useStyles();
+  const classes1 = useStyles1();
   return (
     <div>
       <Header
@@ -112,7 +125,7 @@ export default function Components(props) {
                 <SectionExamples
                   project="Stock Performance Predictor"
                   profile={STOCK}
-                />{" "}
+                />
               </Link>
             </GridItem>
           </GridContainer>
@@ -122,19 +135,26 @@ export default function Components(props) {
           <h3>I have some work experience</h3>
           <GridContainer justify="center">
             <GridItem xs={12} sm={2}>
-              <SectionExamples
-                project="Dyne Health and Fitness"
-                profile={DUMB}
-              />
+              <Link to={"landing-page/6"}>
+                <SectionExamples
+                  project="Dyne Health and Fitness"
+                  profile={DUMB}
+                />
+              </Link>
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <SectionExamples
-                project="Grams Evaluation Labs"
-                profile={GRAIN}
-              />
+              <Link to={"landing-page/7"}>
+                <SectionExamples
+                  project="Grams Evaluation Labs"
+                  profile={GRAIN}
+                />
+              </Link>
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
+                            <Link to={"landing-page/8"}>
+
               <SectionExamples project="Tirex Transmission" profile={EV} />
+              </Link>
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
               <SectionExamples project="Data Cluster Labs" profile={CAM} />
