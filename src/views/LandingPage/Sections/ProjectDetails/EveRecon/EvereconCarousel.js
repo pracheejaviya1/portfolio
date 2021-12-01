@@ -10,13 +10,12 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
-import image1 from "assets/img/eduserv1.png";
-import image2 from "assets/img/eduserv2.png";
-import image3 from "assets/img/eduserv3.png";
-import image4 from "assets/img/eduserv4.png";
-import image5 from "assets/img/eduserv5.png";
-import image6 from "assets/img/eduserv6.png";
-
+import image1 from "assets/img/everecon1.png";
+import image2 from "assets/img/everecon2.png";
+import image3 from "assets/img/everecon3.png";
+import image4 from "assets/img/everecon4.png";
+import image5 from "assets/img/everecon5.png";
+import image6 from "assets/img/everecon6.png";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 

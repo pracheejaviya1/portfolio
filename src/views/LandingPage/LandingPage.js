@@ -10,13 +10,13 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 // @material-ui/icons
 // core components
-import Header from "components/Header/Header.js";
-import HeaderLogo from "components/Header/HeaderLogo.js";
+
 import Parallax from "components/Parallax/Parallax.js";
 import React from "react";
 // Sections for this page
 import ProductSection from "./Sections/ProjectDetails/EduServ/ProductSection.js";
-import WorkSection from "./Sections/WorkSection.js";
+import EvereconProductSection from "./Sections/ProjectDetails/EveRecon/EvereconProductSection.js";
+
 
 const useStyles = makeStyles(styles);
 const headerStyles = makeStyles(styles1);
@@ -59,6 +59,38 @@ export default function LandingPage(props) {
       </div>
     );
   }
-  else
-    return <div> hi</div>
+
+   if (uid === "2") {
+     return (
+       <div>
+         <Parallax filter image={require("assets/img/evereconbg.png")}>
+           <div className={classes.container}>
+             <GridContainer>
+               <GridItem xs={12} sm={12} md={12}>
+                 <h4>
+                   Communities are ways for people to come together and pursue
+                   similar interests. People make communities that operate like
+                   a small organization - they have roles (leader, core members,
+                   followers etc.), objectives (promote their interests through
+                   events and engaging with their community) and day to day
+                   work. The purpose of this platform is to Help communities
+                   create an online presence and portfolio. Manage community
+                   work such as setting up events, gathering registrations and
+                   checking people in Help users discover communities and events
+                   of their interest and get on board easily.
+                 </h4>
+                 <br />
+               </GridItem>
+             </GridContainer>
+           </div>
+         </Parallax>
+         <div className={classNames(classes.main, classes.mainRaised)}>
+           <div className={classes.container}>
+             <EvereconProductSection />
+           </div>
+         </div>
+         <Footer />
+       </div>
+     );
+   } else return <div> hi</div>;
 }

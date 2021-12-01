@@ -1,11 +1,13 @@
 {
   "name": "material-kit-react",
-  "description": "Official Dyne Website",
+  "description": "Prachee Javiya Portfolio",
   "private": true,
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "4.10.0",
     "@material-ui/icons": "4.9.1",
+    "@mui/icons-material": "^5.2.0",
+    "@mui/material": "^5.2.2",
     "classnames": "2.2.6",
     "emailjs": "^3.7.0",
     "emailjs-com": "^3.2.0",
