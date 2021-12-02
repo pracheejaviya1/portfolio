@@ -1,9 +1,6 @@
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import FavoriteRoundedIcon from "@material-ui/icons/FavoriteRounded";
-
-import PeopleAltRoundedIcon from "@material-ui/icons/PeopleAltRounded";
-import BorderColorRoundedIcon from "@material-ui/icons/BorderColorRounded";
 import BookmarksRoundedIcon from "@material-ui/icons/BookmarksRounded";
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 // core components

@@ -63,7 +63,7 @@ export default function LandingPage(props) {
    if (uid === "2") {
      return (
        <div>
-         <Parallax filter image={require("assets/img/evereconbg.png")}>
+         <Parallax image={require("assets/img/evereconbg.png")}>
            <div className={classes.container}>
              <GridContainer>
                <GridItem xs={12} sm={12} md={12}>
