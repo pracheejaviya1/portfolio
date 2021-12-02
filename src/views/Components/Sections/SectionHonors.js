@@ -22,7 +22,7 @@ export default function SectionHonors() {
             <h4>
               Teaching Assistant for Human Computer Interaction course in the
               final semester
-              <br />I was the Secretary and Treasurer for University's Annual
+              <br />Secretary and Treasurer for University's Annual
               Techfest, Ingenium for two consecutive years.
               <br />
               Peer tutor for Communication in English Course
@@ -38,10 +38,10 @@ export default function SectionHonors() {
           <GridItem xs={12} sm={12} md={8}>
             <h2 justify="center">Achievements </h2>
             <h4>
-              National Level Basketball U-17
+              Participation in National Level Basketball U-17 
               <br />
-              State level basketball U-16, U-17, U-19 opens <br />
-              Speed Cubing 3x3 WCA DAIICT, Gandhinagar <br />
+              State level basketball U-16, U-17, U-19 opens winner <br />
+              Speed Cubing 3x3 World Cube Association, DAIICT, Gandhinagar <br />
               Team project on Autonomous car was selected for Annual Tech Expo
               at the University
             </h4>

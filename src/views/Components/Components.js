@@ -151,13 +151,14 @@ export default function Components(props) {
               </Link>
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
-                            <Link to={"landing-page/8"}>
-
-              <SectionExamples project="Tirex Transmission" profile={EV} />
+              <Link to={"landing-page/8"}>
+                <SectionExamples project="Tirex Transmission" profile={EV} />
               </Link>
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
+              <Link to={"landing-page/9"}>
               <SectionExamples project="Data Cluster Labs" profile={CAM} />
+              </Link>
             </GridItem>
           </GridContainer>
         </Grid>

@@ -16,6 +16,7 @@ import React from "react";
 import ProductSection from "./Sections/ProjectDetails/EduServ/ProductSection.js";
 import EvereconProductSection from "./Sections/ProjectDetails/EveRecon/EvereconProductSection.js";
 import CarProductSection from "./Sections/ProjectDetails/Car/CarProductSection.js"
+import StockProductSection from "./Sections/ProjectDetails/Stock/StockProductSection.js"; 
 
 
 const useStyles = makeStyles(styles);
@@ -154,12 +155,22 @@ export default function LandingPage(props) {
   if (uid === "5") {
     return (
       <div>
-        <Parallax filter image={require("assets/img/robot.jpg")}>
+        <Parallax filter image={require("assets/img/ml.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={12}>
+                <h1 className={classes.title}>Stock Performance Predictor</h1>
                 <h4>
-                MACHINE LEARNING
+                  Predicting the stock price trend by interpreting the
+                  seemlychaotic market data has always been an attractive topic
+                  toboth investors and researchers. When it comes to trading
+                  inthe Stock Market, there are many different approaches tofind
+                  the right stock. Many forms of analysis have emergedto detect
+                  which stock is worth the money. Technical Analysis,
+                  Sentimental Analysis and Fundamental Analysis — observing a
+                  company’s financials like their Balance Sheet or Cash Flow
+                  Statement to determine if the company has valuerelative to
+                  their current stock price.
                 </h4>
                 <br />
               </GridItem>
@@ -168,7 +179,7 @@ export default function LandingPage(props) {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <CarProductSection />
+            <StockProductSection />
           </div>
         </div>
         <Footer />
@@ -258,7 +269,7 @@ export default function LandingPage(props) {
               if (uid === "9") {
                 return (
                   <div>
-                    <Parallax filter image={require("assets/img/evcar.jpg")}>
+                    <Parallax filter image={require("assets/img/datacluster.jpg")}>
                       <div className={classes.container}>
                         <GridContainer>
                           <GridItem xs={12} sm={12} md={12}>

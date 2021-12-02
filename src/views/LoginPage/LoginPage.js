@@ -80,7 +80,7 @@ export default function LoginPage(props) {
                   <CardBody>
                     <CustomInput
                       labelText="Full Name"
-                      id="first"
+                      id="name"
                       formControlProps={{
                         fullWidth: true,
                       }}
@@ -110,7 +110,7 @@ export default function LoginPage(props) {
                     />
                     <CustomInput
                       labelText="Message"
-                      id="desc"
+                      id="message"
                       formControlProps={{
                         fullWidth: true,
                       }}
