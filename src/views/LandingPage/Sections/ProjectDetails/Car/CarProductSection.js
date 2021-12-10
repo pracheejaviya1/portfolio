@@ -24,7 +24,7 @@ export default function ProductSection() {
             Mobile Robots course in semester 7. We have used openCV and color
             masking techniques for lane detection. Find the code 
             <a href="https://github.com/Kaushal1011/miniature-autonomous-car">
-                          {" "}here.
+            here.
             </a>
           </h5>
         </GridItem>

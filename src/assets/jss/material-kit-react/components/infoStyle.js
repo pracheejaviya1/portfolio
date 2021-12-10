@@ -6,6 +6,7 @@ import {
   infoColor,
   roseColor,
   grayColor,
+  blackColor,
   title
 } from "assets/jss/material-kit-react.js";
 
@@ -51,10 +52,10 @@ const infoStyle = {
   },
   title,
   description: {
-    color: grayColor,
+    color: blackColor,
     overflow: "hidden",
     marginTop: "0px",
-    fontSize: "14px"
+    fontSize: "16px"
   },
   iconWrapperVertical: {
     float: "none"

@@ -45,12 +45,13 @@ const card = {
 
 const defaultFont = {
   fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-  fontWeight: "300",
+  fontWeight: "400",
   lineHeight: "1.5em",
 };
 
 const primaryColor = "#9c27b0";
 const warningColor = "#ff9800";
+const blackColor = "#000000";
 const dangerColor = "#f44336";
 const successColor = "#4caf50";
 const infoColor = "#00acc1";
@@ -176,6 +177,7 @@ export {
   infoColor,
   roseColor,
   grayColor,
+  blackColor,
   primaryBoxShadow,
   infoBoxShadow,
   successBoxShadow,
