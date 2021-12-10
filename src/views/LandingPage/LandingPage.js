@@ -16,7 +16,8 @@ import React from "react";
 import ProductSection from "./Sections/ProjectDetails/EduServ/ProductSection.js";
 import EvereconProductSection from "./Sections/ProjectDetails/EveRecon/EvereconProductSection.js";
 import CarProductSection from "./Sections/ProjectDetails/Car/CarProductSection.js"
-import StockProductSection from "./Sections/ProjectDetails/Stock/StockProductSection.js"; 
+import StockProductSection from "./Sections/ProjectDetails/Stock/StockProductSection.js";
+import LSTMProductSection from "./Sections/ProjectDetails/LSTM/LSTMProductSection";
 
 
 const useStyles = makeStyles(styles);
@@ -135,8 +136,25 @@ export default function LandingPage(props) {
            <div className={classes.container}>
              <GridContainer>
                <GridItem xs={12} sm={12} md={12}>
+                 <h1 className={classes.title}>Long-Short Term Memory</h1>
                  <h4>
-                  LSTM
+                   Article name - Distributed training over Decentralized data
+                   with Federated Learning and applying Co-operative Spectrum
+                   Sensing Scheme.
+                   <br />
+                   The base article was on the topic Long Short-Term Memory
+                   based Spectrum Sensing Scheme for Cognitive Radio by N.
+                   Balwani and D. K. Patel and Cooperative communications for
+                   cognitive radio networks by K. B. Letaief and W. Zhang.
+                   <br />
+                   Federated Learning is a Machine Learning framework that utilizes
+                   the computation power of the client devices (i.e. mobile
+                   devices), thereby eradicating the need of explicitly
+                   uploading data to the server. Each client device trains the
+                   model with local data present on it. The hyper parameters -
+                   weights and biases are updated and send back to the server.
+                   The server gathers such updated hyper parameters from all the
+                   clients after encryption.
                  </h4>
                  <br />
                </GridItem>
@@ -145,7 +163,7 @@ export default function LandingPage(props) {
          </Parallax>
          <div className={classNames(classes.main, classes.mainRaised)}>
            <div className={classes.container}>
-             <CarProductSection />
+             <LSTMProductSection />
            </div>
          </div>
          <Footer />

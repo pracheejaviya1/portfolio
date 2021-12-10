@@ -25,7 +25,7 @@ export default function SectionCarousel() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -36,7 +36,7 @@ export default function SectionCarousel() {
         <h4 className={classes.subtitle}>Few Screen Designs</h4>
 
         <GridContainer>
-          <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}>
+          <GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>
             <Card carousel>
               <Carousel {...settings}>
                 <div>
