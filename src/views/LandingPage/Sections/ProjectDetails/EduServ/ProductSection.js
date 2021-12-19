@@ -42,9 +42,12 @@ export default function ProductSection() {
             interfaces.
           </h5>
           <br />
-          <Button color="primary">
-            <i className={classes1.socials} /> See prototype
-          </Button>
+          <form action="https://www.figma.com/proto/MsDCsv1mh75BgKWuzQeT7J/EduServ?node-id=338%3A0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=338%3A0">
+            <Button color="primary" type="submit">
+              <i className={classes1.socials} />
+              See prototype
+            </Button>
+          </form>
           <br />
         </GridItem>
       </GridContainer>
