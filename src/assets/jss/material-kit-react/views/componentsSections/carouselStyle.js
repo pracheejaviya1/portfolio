@@ -1,3 +1,4 @@
+import { title } from "assets/jss/material-kit-react";
 import { container } from "assets/jss/material-kit-react.js";
 
 const carouselStyle = {
@@ -5,7 +6,11 @@ const carouselStyle = {
     padding: "70px 0",
   },
   subtitle: {
-    color: "#1A1A1A",
+    ...title,
+    marginBottom: "1rem",
+    marginTop: "30px",
+    minHeight: "32px",
+    textDecoration: "none",
   },
   container,
   marginAuto: {

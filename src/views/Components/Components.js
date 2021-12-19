@@ -115,6 +115,7 @@ export default function Components(props) {
                 <SectionExamples project="Autonomous Car" profile={CAR} />
               </Link>
             </GridItem>
+            <br/>
             <GridItem xs={6} sm={2}>
               <Link to={"landing-page/4"}>
                 <SectionExamples project="LSTM-Spectrum Sensing" profile={PC} />

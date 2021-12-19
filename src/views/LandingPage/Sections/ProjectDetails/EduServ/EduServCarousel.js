@@ -35,7 +35,7 @@ export default function SectionCarousel() {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <h4 className={classes.subtitle}>Few Screen Designs</h4>
+        <h4 className={classes.subtitle}>Screen Designs</h4>
 
         <GridContainer>
           <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}>
