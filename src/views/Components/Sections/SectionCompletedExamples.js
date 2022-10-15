@@ -18,11 +18,10 @@ export default function SectionCompletedExamples() {
           <GridItem xs={12} sm={12} md={8}>
             {/* <h3>About Me</h3> */}
             <h4>
-              I am a Final Year BTech student at Ahmedabad University, India. I
-              am also pursuing Minors in Physics as Cosmos
-              and Astronomy fascinates me. 
-              I have good experience in designing, coding website frontend and developing Android
-              mobile applications.  I am also passionate about basketball.{" "}
+            I'm pursuing a Master's degree in Human Centered Computing at University of Maryland, Baltimore County 
+            I did my undergrad in computer science and I have full-stack development experience. 
+            I want to pursue my career in designing assistive technology tools and combine it with the Human Computer interaction 
+            facet to improve accessibility and overall user experience. 
             </h4>
           </GridItem>
         </GridContainer>
